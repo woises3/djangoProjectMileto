@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block title %} Mileto{% endblock %}
+
+{% block content %}
+<div class="container-slider">
+  <div class="slider" id="slider">
+    <div class="slider__section">
+      <img src="static/img/3_banner/Banner_Opc1.jpg" alt="" class="slider__img">
+      <div class="slider__content"> 
+        <h2 class="slider__title">colocar una desc depende de la imagen </h2>
+        <p class="slider__txt">texto</p>
+        <a href="" class="slider__link">SHOP NOW</a>
+      </div>
+    </div>
+    <div class="slider__section">
+      <img src="static/img/3_banner/Banner_Opc2.jpg" alt="" class="slider__img">
+      <div class="slider__content"> 
+        <h2 class="slider__title">colocar una desc depende de la imagen </h2>
+        <p class="slider__txt">texto</p>
+        <a href="" class="slider__link">SHOP NOW</a>
+      </div>
+    </div>
+    <div class="slider__section">
+      <img src="static/img/3_banner/Banner_Opc3.jpg" alt="" class="slider__img">
+      <div class="slider__content"> 
+        <h2 class="slider__title">colocar una desc depende de la imagen </h2>
+        <p class="slider__txt">texto</p>
+        <a href="" class="slider__link">SHOP NOW</a>
+      </div>
+    </div>
+    <div class="slider__section">
+      <img src="static/img/3_banner/Banner_Opc4.jpg" alt="" class="slider__img">
+      <div class="slider__content"> 
+        <h2 class="slider__title">colocar una desc depende de la imagen </h2>
+        <p class="slider__txt">texto</p>
+        <a href="" class="slider__link">SHOP NOW</a>
+      </div>
+    </div>
+  </div>
+  <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+  <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+</div>
+<main class="main">
+  <div class="container">
+   <h2 class="main-title">New Arrivals for you</h2>
+   <!-- los productos --luego aca basta con hacer uno y luego lo demas se trae de la base de datos-->
+   <section class="container-products">
+    <div class="product">
+      <img src="static/img/productos/WhatsApp Image 2022-03-23 at 11.34.35 AM.jpeg" alt="" class="product__img">
+      <div class="product__description">
+        <h3 class="product__title">Descripcion</h3>
+        <span class="product__price">$1</span>
+      </div>
+      <i class="product__icon fas fa-cart-plus"></i>
+    </div>
+    <div class="product">
+      <img src="static\img\Productos\WhatsApp Image 2022-03-24 at 1.35.20 PM.jpeg" alt="" class="product__img">
+      <div class="product__description">
+        <h3 class="product__title">Descripcion</h3>
+        <span class="product__price">1$</span>
+      </div>
+      <i class="product__icon fas fa-cart-plus"></i>
+    </div>
+    <div class="product">
+      <img src="static\img\Productos\WhatsApp Image 2022-03-24 at 1.50.17 PM (1).jpeg" alt="" class="product__img">
+      <div class="product__description">
+        <h3 class="product__title">Descripcion</h3>
+        <span class="product__price">1$</span>
+      </div>
+      <i class="product__icon fas fa-cart-plus"></i>
+    </div>
+    <div class="product">
+      <img src="static\img\Productos\WhatsApp Image 2022-03-24 at 1.50.17 PM (7).jpeg" alt="" class="product__img">
+      <div class="product__description">
+        <h3 class="product__title">Descripcion</h3>
+        <span class="product__price">1$</span>
+      </div>
+      <i class="product__icon fas fa-cart-plus"></i>
+    </div>
+
+   </section>
+  </div>
+</main> 
+<br>
+{% endblock %}
