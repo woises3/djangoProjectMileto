@@ -15,3 +15,5 @@ def niños(request):
     return render(request, 'niños.html')
 def descuentos(request):
     return render(request, 'descuentos.html')
+def formulario_inicio_sesion(request):
+    return render(request, 'form_inicio_sesion.html')

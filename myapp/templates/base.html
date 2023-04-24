@@ -1,166 +1,94 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Mileto Online</title>
-    <link rel="stylesheet" href= "{% static '/styles/main.css' %}">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="static\img\logos\Perfil-2.ico">
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="pt-1 txt-telf-header mt-2">Need help <i class="fas fa-phone"></i> call 123456789</p>
-        </div>
-        <div class="col-sm-6 text-center">
-          <h1 class="txt-RomansStory"> {% block title %} {% endblock %}</title></h1>
-        </div>
-        <div class="col-sm-3 text-right pr-4">
-          <a href="" class="main-header__link d-block mt-2 mb-1"><i class="fas fa-user"></i> Sign in!</a>
-          <a href="" class="main-header__link d-block"><i class="fas fa-shopping-cart"></i>My cart</i></a>
-          <!-- <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>           -->
-          
-          </form>
-        </div>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Mileto Online</title>
+  <link rel="stylesheet" href="{% static '/styles/main.css' %}">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="static\img\logos\Perfil-2.ico">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <p class="pt-1 txt-telf-header mt-2">Necesitas ayuda <i class="fas fa-phone"></i> llamar al 123456789</p>
       </div>
-      <div class="row">
-        <div class="col-sm-9">
-          <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
-          <nav class="main-nav" id="main-nav">
-              <ul class="menu">
-                  <li class="menu__item"><a href="/" class="menu__link">Inicio</a></li>
-                  <li class="menu__item"><a href="/hombre" class="menu__link">Hombre</a></li>
-                  <li class="menu__item"><a href="/mujer" class="menu__link">Mujer</a></li>
-                  <li class="menu__item"><a href="/niños" class="menu__link">Niños</a></li>
-                  <li class="menu__item"><a href="/descuentos" class="menu__link">Rebajas</a></li>
-                  <li class="menu__item"><a href="/about" class="menu__link">Quienes somos</a></li>
-              </ul>
-          </nav>    
+      <div class="col-sm-6 text-center">
+        <h1 class="txt-RomansStory"> {% block title %} {% endblock %}</title>
+        </h1>
       </div>
-      <div class = "col-sm-3">
-        <form class="form-inline d-flex justify-content-center md-form form-sm active-pink active-pink-2">
-          <i class="fas fa-search active" aria-hidden="true"></i>
-          <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
-      </div>
+      <div class="col-sm-3 text-right pr-4">
+        <a href="/form1" class="main-header__link d-block mt-2 mb-1"><i class="fas fa-user"></i> Ingresar!</a>
+        <a href="" class="main-header__link d-block"><i class="fas fa-shopping-cart"></i>Mi carrito</i></a>
+        <!-- <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>           -->
+
+        </form>
       </div>
     </div>
-    <!-- <header class="main-header">
-      <div class="container container--flex">
-        
-        <div class="main-header__container">
-        </div> 
-        </div>          -->
-    </header> 
-    <!-- <div class="container-slider">
-        <div class="slider" id="slider">
-          <div class="slider__section">
-            <img src="static/img/3_banner/Banner_Opc1.jpg" alt="" class="slider__img">
-            <div class="slider__content"> 
-              <h2 class="slider__title">colocar una desc depende de la imagen </h2>
-              <p class="slider__txt">texto</p>
-              <a href="" class="slider__link">SHOP NOW</a>
-            </div>
-          </div>
-          <div class="slider__section">
-            <img src="static/img/3_banner/Banner_Opc2.jpg" alt="" class="slider__img">
-            <div class="slider__content"> 
-              <h2 class="slider__title">colocar una desc depende de la imagen </h2>
-              <p class="slider__txt">texto</p>
-              <a href="" class="slider__link">SHOP NOW</a>
-            </div>
-          </div>
-          <div class="slider__section">
-            <img src="static/img/3_banner/Banner_Opc3.jpg" alt="" class="slider__img">
-            <div class="slider__content"> 
-              <h2 class="slider__title">colocar una desc depende de la imagen </h2>
-              <p class="slider__txt">texto</p>
-              <a href="" class="slider__link">SHOP NOW</a>
-            </div>
-          </div>
-          <div class="slider__section">
-            <img src="static/img/3_banner/Banner_Opc4.jpg" alt="" class="slider__img">
-            <div class="slider__content"> 
-              <h2 class="slider__title">colocar una desc depende de la imagen </h2>
-              <p class="slider__txt">texto</p>
-              <a href="" class="slider__link">SHOP NOW</a>
-            </div>
-          </div>
-        </div>
-        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    <div class="row">
+      <div class="col-sm-9">
+        <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+        <nav class="main-nav" id="main-nav">
+          <ul class="menu">
+            <li class="menu__item"><a href="/" class="menu__link">Inicio</a></li>
+            <li class="menu__item"><a href="/hombre" class="menu__link">Hombre</a></li>
+            <li class="menu__item"><a href="/mujer" class="menu__link">Mujer</a></li>
+            <li class="menu__item"><a href="/niños" class="menu__link">Niños</a></li>
+            <li class="menu__item"><a href="/descuentos" class="menu__link">Rebajas</a></li>
+            <li class="menu__item"><a href="/about" class="menu__link">Quienes somos</a></li>
+          </ul>
+        </nav>
       </div>
-      <main class="main">
-        <div class="container">
-         <h2 class="main-title">New Arrivals for you</h2>
-         <section class="container-products">
-          <div class="product">
-            <img src="static/img/productos/WhatsApp Image 2022-03-23 at 11.34.35 AM.jpeg" alt="" class="product__img">
-            <div class="product__description">
-              <h3 class="product__title">Descripcion</h3>
-              <span class="product__price">$1</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-          </div>
-          <div class="product">
-            <img src="static\img\Productos\WhatsApp Image 2022-03-24 at 1.35.20 PM.jpeg" alt="" class="product__img">
-            <div class="product__description">
-              <h3 class="product__title">Descripcion</h3>
-              <span class="product__price">1$</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-          </div>
-          <div class="product">
-            <img src="static\img\Productos\WhatsApp Image 2022-03-24 at 1.50.17 PM (1).jpeg" alt="" class="product__img">
-            <div class="product__description">
-              <h3 class="product__title">Descripcion</h3>
-              <span class="product__price">1$</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-          </div>
-          <div class="product">
-            <img src="static\img\Productos\WhatsApp Image 2022-03-24 at 1.50.17 PM (7).jpeg" alt="" class="product__img">
-            <div class="product__description">
-              <h3 class="product__title">Descripcion</h3>
-              <span class="product__price">1$</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-          </div>
- 
-         </section>
-        </div>
-      </main> -->
-      {% block content %}
-      {% endblock %}
-      <br> 
-      <footer class="main-footer">
-        <div class="footer__section">
-          <h2 class="footer__title">About Us</h2>
-          <p class="footer__txt">Somos Tienda Mileto, una tienda comercial accesible donde podrás encontrar todo tipo de accesorios y productos que busques en el momento indicado.
-           Productos excelentes (originales, de marca, de calidad, fashion, de utilidadbien curados y traídos de USA y del mundo) - a buenos precios. Trabajamos con la mejor calidad y una servicio personalizado, con precios totalmente accesibles, dando
-            posibilidades de cuotas a pagar, apartados y pedidos por encargue.</p>
-        </div>
-        <div class="footer__section">
-          <h2 class="footer__title">Location</h2>
-          <p class="footer__txt">Ave.34, Entre Calle 32 y 33, Acarigua</p>
-          <h2 class="footer__title">Contact</h2>
-          <p class="footer__txt">Phone: +123456789</p>
-          <p class="footer__txt">Email: equipo@tiendamileto.com</p>
-        </div>
-        <div class="footer__section">
-          <h2 class="footer__title">Sigs up for you offers</h2>
-          <p class="footer__txt">By subscribing to our mailing list you will always get latest news and updates from us</p>
-          <input type="email" class="footer__input" placeholder="Enter your email">
-        </div>
-        <p class="copy">© 2023 Mileto Venezuela</p>
-      </footer>    
-      <script src="/static/js/slider.js"></script>
-      <script src="/static/js/menu.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+      <div class="col-sm-3">
+        <form class="form-inline d-flex justify-content-center md-form form-sm active-pink active-pink-2">
+          <i class="fas fa-search active" aria-hidden="true"></i>
+          <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar" aria-label="Search">
+      </div>
+    </div>
+  </div>
+  </header>
+  {% block content %}
+  {% endblock %}
+  <br>
+  <footer class="main-footer">
+    <div class="footer__section">
+      <h2 class="footer__title mt-4">Quines somos</h2>
+      <p class="footer__txt">Somos Tienda Mileto, una tienda comercial accesible donde podrás encontrar todo tipo de
+        accesorios y productos que busques en el momento indicado.
+        Productos excelentes (originales, de marca, de calidad, fashion, de utilidadbien curados y traídos de USA y del
+        mundo) - a buenos precios. Trabajamos con la mejor calidad y una servicio personalizado, con precios totalmente
+        accesibles, dando
+        posibilidades de cuotas a pagar, apartados y pedidos por encargue.</p>
+    </div>
+    <div class="footer__section mt-4">
+      <h2 class="footer__title">Ubicación</h2>
+      <p class="footer__txt">Ave.34, Entre Calle 32 y 33, Acarigua</p>
+      <h2 class="footer__title">Contacto</h2>
+      <p class="footer__txt">Telefono: +123456789</p>
+      <p class="footer__txt">Correo: equipo@tiendamileto.com</p>
+    </div>
+    <div class="footer__section mt-4">
+      <h2 class="footer__title">Suscribete a las ofertas</h2>
+      <p class="footer__txt">Al suscribirse a nuestra lista de correo, siempre recibirá nuestras últimas noticias y actualizaciones.</p>
+      <input type="email" class="footer__input" placeholder="Enter your email">
+    </div>
+    <p class="copy mt-4">© 2023 Mileto Venezuela</p>
+  </footer>
+  <script src="/static/js/slider.js"></script>
+  <script src="/static/js/menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
