@@ -1,7 +1,7 @@
 from django import forms
 
 
-class formulario_registro_usuario(forms.form):
+class formulario_registro_usuario(forms.Form):
     id = forms.IntegerField()
     email = forms.CharField()
     password = forms.CharField()
