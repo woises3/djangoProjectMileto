@@ -2,10 +2,9 @@ from django.shortcuts import render
 from django.shortcuts import get_list_or_404
 from django.http import HttpResponse
 from myapp.models import registro_Usuario
-from myapp.forms import formulario_registro_usuario
+#from myapp.forms import formulario_registro_usuario
 
 # Create your views here.
-
 
 def index(request):
     return render(request, 'index.html')
@@ -35,11 +34,18 @@ def formulario_inicio_sesion(request):
     return render(request, 'form_inicio_sesion.html')
 
 
-# def registroUsuario(request):
-#    return render(request, 'form_registro_usuario.html')
-
+"""def registroUsuario(request):
+    return render(request, 'form_registro_usuario.html') """
 
 def registroUsuario(request):
+      if request.method == 'POST':
+            curso = registro_Usuario(request.post['email '], (request.post['password']), (request.post['inputAddress']), (
+                request.post['inputCity']), (request.post['inputState']), (request.post['inputZip']), (request.post['inputRecuperacion']))
+            curso.save()
+            return render(request, "form_registro_usuario.html")
+      return render(request, 'form_registro_usuario.html')
+
+"""def registroUsuario(request):
     if request.method == 'POST':
         miFormulario = formulario_registro_usuario(request.POST)
         print(miFormulario)
@@ -52,7 +58,7 @@ def registroUsuario(request):
             return render(request, 'form_registro_usuario.html')
     else:
         miFormulario = formulario_registro_usuario()
-        return render(request, 'form_registro_usuario.html')
+        return render(request, 'form_registro_usuario.html')""" 
 
 
 def formulario_recuperacion(request):

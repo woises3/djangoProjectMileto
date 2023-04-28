@@ -1,7 +1,7 @@
-from django import forms
+"""from django import forms
 
 
-class formulario_registro_usuario(forms.form):
+class formulario_registro_usuario(forms.Form):
     id = forms.IntegerField()
     email = forms.CharField()
     password = forms.CharField()
@@ -9,4 +9,4 @@ class formulario_registro_usuario(forms.form):
     inputCity = forms.CharField()
     inputState = forms.CharField()
     inputZip = forms.CharField()
-    inputRecuperacion = forms.CharField()
+    inputRecuperacion = forms.CharField() """
