@@ -1,4 +1,4 @@
-"""from django import forms
+from django import forms
 
 
 class formulario_registro_usuario(forms.Form):
@@ -9,4 +9,4 @@ class formulario_registro_usuario(forms.Form):
     inputCity = forms.CharField()
     inputState = forms.CharField()
     inputZip = forms.CharField()
-    inputRecuperacion = forms.CharField() """
+    inputRecuperacion = forms.CharField()
