@@ -13,3 +13,19 @@ class registro_Usuario(models.Model):
 
     def __str__(self):
         return f"Correo: {self.email} - Contraseña {self.password} - Direccion 1 {self.inputAddress} - Ciudad {self.inputCity} - Estado {self.inputState} - Codigo postal {self.inputZip} - Cod. Recuperacion {self.inputRecuperacion}"
+    
+class inicio_Sesion(models.Model):
+    email               = models.CharField(max_length=40)
+    password            = models.CharField(max_length=40)
+
+    def __str__(self):
+        return f"Correo: {self.email} - Contraseña {self.password}"
+    
+class recuperacion_Clave(models.Model):
+    email               = models.CharField(max_length=40)
+    inputRecuperacion   = models.CharField(max_length=40)
+
+    def __str__(self):
+        return f"Correo: {self.email} - Cod. Recuperacion {self.inputRecuperacion}"
+
+

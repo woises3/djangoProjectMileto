@@ -3,7 +3,13 @@
 {% block title %} Mileto{% endblock %}
 {% block content %}
 <br><br><br>
-<form>
+<form action="/form_inicio/" method="post"> {% csrf_token %}
+  <table>
+
+    {{ miFormulario.as_table }}
+
+  </table>
+  <!---
   <div class="form-group mt-4 text-center">
     <h6>Iniciar sesión</h6>
   </div>
@@ -14,8 +20,11 @@
   <div class="form-group">
     <label for="exampleInputPassword1">Contraseña</label>
     <input type="password" class="form-control" id="exampleInputPassword1">
+    -->
     <a href="/form_recuperacion" class="">Olvidé mi contraseña</a>
+    <!--
   </div>
+-->
   <button type="submit" class="btn btn-primary text-center">Ingresar</button>
   <a href="/form_registro" class="">¿No tiene una cuenta? Regístrese</a>
 

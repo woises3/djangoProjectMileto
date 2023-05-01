@@ -3,7 +3,13 @@
 {% block title %} Mileto{% endblock %}
 {% block content %}
 <br><br><br>
-<form>
+<form action="/form_recuperacion/" method="post"> {% csrf_token %}
+    <table>
+  
+      {{ miFormulario.as_table }}
+  
+    </table>
+<!--  
     <div class="form-group mt-4 text-center">
         <h6>Recuperación clave</h6>
     </div>
@@ -15,7 +21,14 @@
         <label for="inputRecuperacion">Ingresa el codigo de recuperacion de clave</label>
         <input type="text" class="form-control" id="inputRecuperacion">
     </div>
+    -->  
     <button type="submit" class="btn btn-primary text-center">Recuperar</button>
     <br><br><br>
 </form>
 {% endblock %}
+<form action="/form_recuperacion/" method="post"> {% csrf_token %}
+    <table>
+  
+      {{ miFormulario.as_table }}
+  
+    </table>
